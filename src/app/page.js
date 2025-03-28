@@ -35,7 +35,11 @@ const poppinsExtraBold = Poppins({
 });
 
 export default function Home() {
-  
+  const [name, setName] = useState("")
+  const [lastName, setLastName] = useState("")
+  const [email, setEmail] = useState("")
+  const [message, setMessage] = useState("")
+
   const scrollToSection = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
@@ -43,10 +47,10 @@ export default function Home() {
   return (
     <>
       <div
-        className="relative w-screen bg-cover h-screen bg-center bg-no-repeat"
+        className="relative w-full bg-cover h-screen bg-center bg-no-repeat"
         style={{ backgroundImage: "url('bg.jpg')" }}
       >
-        <div className="absolute inset-0 bg-black/10"></div>
+        <div className="w-full absolute inset-0 bg-black/10"></div>
         <div className="relative z-10 flex ">
           <Image
             alt="logo"
@@ -89,15 +93,16 @@ export default function Home() {
           </button>
         </div>
         <div className="relative mt-15 z-10">
-          <h1 className={`slide-in ml-4 text-white text-8xl ${poppinsBold.className}`}>
+          <h1 id="sign" className={`slide-in ml-4 text-white text-8xl ${poppinsBold.className}`}>
             Your Local
           </h1>
           <h1
-            className={`slide-in mt-10 ml-4 text-white text-8xl ${poppinsBold.className}`}
+            id="sign" className={`slide-in mt-10 ml-4 text-white text-8xl ${poppinsBold.className}`}
           >
             Plumbing Veterans
           </h1>
           <p
+            id="sign"
             className={`slide-in ml-4 mt-7 text-white text-4xl ${poppinsSemiBold.className}`}
           >
             Experts in plumbing & repairs
@@ -124,12 +129,13 @@ export default function Home() {
             >
               Local Service
             </h1>
-            <button
+            <p
+              id="priceClick"
               onClick={() => scrollToSection("pricing")}
-              className={`mt-1 text-2xl ${poppinsMedium.className}`}
+              className={`mt-1 text-2xl hover:cursor-pointer ${poppinsMedium.className}`}
             >
               Click Here To See Prices
-            </button>
+            </p>
             <p
               className={`w-80 mr-auto ml-7 text-2xl mt-3 mb-5 ${poppinsSemiBold.className}`}
             >
@@ -156,12 +162,13 @@ export default function Home() {
             >
               Industrial Service
             </h1>
-            <button
+            <p
+              id="priceClick"
               onClick={() => scrollToSection("pricing")}
-              className={`mt-1 text-2xl ${poppinsMedium.className}`}
+              className={`mt-1 text-2xl hover:cursor-pointer ${poppinsMedium.className}`}
             >
               Click Here To See Prices
-            </button>
+            </p>
             <p
               className={`w-80 mr-auto ml-7 text-2xl mt-3 mb-5 ${poppinsSemiBold.className}`}
             >
@@ -191,37 +198,44 @@ export default function Home() {
         >
           Bookings
         </h1>
-        <h1 className={`ml-135 text-4xl ${poppinsSemiBold.className}`}>
-          Need A Plumber Book Now
-        </h1>
-        <form className="bg-white mx-auto mt-5 flex flex-col rounded-2xl h-150 w-180 shadow-[0_10px_15px_rgba(0,0,0,0.1),0_4px_6px_rgba(0,0,0,0.1)]">
+        <div className="flex justify-center items-center">
+          <h1 className={` text-4xl ${poppinsSemiBold.className}`}>
+            Need A Plumber Book Now
+          </h1>
+        </div>
+        <div  className="bg-white mx-auto mt-5 flex flex-col rounded-2xl h-150 w-180 shadow-[0_10px_15px_rgba(0,0,0,0.1),0_4px_6px_rgba(0,0,0,0.1)]">
           <div>
             <input
               placeholder="First Name"
               required
+              onChange={(e) => setName(e.target.value)}
               className={`ml-5 mt-10 w-80 h-15 ${poppinsSemiBold.className} text-3xl text-black border-2 indent-2.5 placeholder-black border-black rounded-lg`}
             />
             <input
               placeholder="Last Name"
+              required
+              onChange={(e) => setLastName(e.target.value)}
               className={`ml-5 mt-10 w-80 h-15 ${poppinsSemiBold.className} text-3xl text-black indent-2.5 placeholder-black border-2 border-black rounded-lg`}
             />
           </div>
           <input
             className={`ml-5 mt-5 w-165 h-15 ${poppinsSemiBold.className} text-3xl text-black indent-2.5 placeholder-black border-2 border-black rounded-lg`}
             placeholder="Email"
+            onChange={(e) => setEmail(e.target.value)}
             required
           />
           <input
             className={`pb-50 ml-5 mt-5 w-165 h-65 ${poppinsSemiBold.className} text-3xl text-black indent-2.5 placeholder-black border-2 border-black rounded-lg placeholder:mb-auto`}
             placeholder="Message"
+            onChange={(e) => setMessage(e.target.value)}
             required
           />
-          <button type="submit"
-            className={`mx-auto mt-7 bg-blue-800 h-18 w-70 rounded-2xl shadow-[0_10px_15px_rgba(0,0,0,0.1),0_4px_6px_rgba(0,0,0,0.1)] hover:bg-blue-700 text-white ${poppinsBold.className} text-white text-3xl`}
-          >
-            Submit
-          </button>
-        </form>
+          <a className="flex items-center justify-center" href={`mailto:grayjamesong@gmail.com?subject=New request From ${name} ${lastName}&body=${message}        ${email}`}>
+            <button className={`mt-5 bg-blue-800 h-17 w-60 rounded-2xl shadow-[0_10px_15px_rgba(0,0,0,0.1),0_4px_6px_rgba(0,0,0,0.1)] hover:bg-blue-700 text-white ${poppinsBold.className} text-white text-3xl`}>
+              Book Now
+            </button>
+          </a>
+        </div>
       </section>
 
       <section id="pricing" className="bg-gray-100 w-screen h-screen">
@@ -282,7 +296,7 @@ export default function Home() {
             <p className={`ml-3 mt-3 text-3xl ${poppinsMedium.className}`}>WhatsApp: +447788220710</p>
             <FaWhatsapp className="ml-3 text-green-600 w-19 h-19" />
           </div>
-          <div className="slide-in2 mt-7 ml-5 w-200 h-60 flex justify-center items-center bg-white rounded-lg shadow-[0_10px_15px_rgba(0,0,0,0.1),0_4px_6px_rgba(0,0,0,0.1)]">
+          <div className="slide-in2 mt-7 ml-7 w-200 h-60 flex justify-center items-center bg-white rounded-lg shadow-[0_10px_15px_rgba(0,0,0,0.1),0_4px_6px_rgba(0,0,0,0.1)]">
             <h1 className={`ml-2 text-4xl leading-13 ${poppinsMedium.className}`}>The Veterans Expert Plumbing Repairs are a well trusted plumbing company if you need plumbing The Veterans Expert Plumbing Repairs is the go to.</h1>
           </div>
         </div>
