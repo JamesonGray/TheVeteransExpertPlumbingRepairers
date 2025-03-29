@@ -172,26 +172,26 @@ export default function Home() {
 
       <section id="services" className="bg-gray-100 w-full min-h-screen py-8 px-4">
         <h1
-          className={`mt-3 text-3xl md:text-4xl ${poppinsSemiBold.className} underline decoration-3 underline-offset-5`}
+          className={`mt-3 text-3xl md:text-4xl ${poppinsSemiBold.className} underline decoration-3 underline-offset-5 text-black`}
         >
           Services
         </h1>
         <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-10 lg:gap-40 mt-8">
           <div className="appear-animation bg-white flex flex-col items-center rounded-2xl p-4 w-full max-w-md shadow-md">
             <h1
-              className={`mt-3 text-2xl md:text-3xl ${poppinsExtraBold.className}`}
+              className={`mt-3 text-2xl md:text-3xl ${poppinsExtraBold.className} text-black`}
             >
               Local Service
             </h1>
             <p
               id="priceClick"
               onClick={() => scrollToSection("pricing")}
-              className={`mt-1 text-lg md:text-2xl hover:cursor-pointer ${poppinsMedium.className}`}
+              className={`mt-1 text-lg md:text-2xl hover:cursor-pointer ${poppinsMedium.className} text-black`}
             >
               Click Here To See Prices
             </p>
             <p
-              className={`w-full md:w-80 md:ml-7 text-lg md:text-2xl mt-3 mb-5 ${poppinsSemiBold.className}`}
+              className={`w-full md:w-80 md:ml-7 text-lg md:text-2xl mt-3 mb-5 ${poppinsSemiBold.className} text-black`}
             >
               We provide prompt and reliable plumbing solutions for homeowners
               and small businesses, ensuring your systems function smoothly.
@@ -212,19 +212,19 @@ export default function Home() {
           </div>
           <div className="appear-animation bg-white flex flex-col items-center rounded-2xl p-4 w-full max-w-md shadow-md mt-8 md:mt-0">
             <h1
-              className={`mt-3 text-2xl md:text-3xl ${poppinsExtraBold.className}`}
+              className={`mt-3 text-2xl md:text-3xl ${poppinsExtraBold.className} text-black`}
             >
               Industrial Service
             </h1>
             <p
               id="priceClick"
               onClick={() => scrollToSection("pricing")}
-              className={`mt-1 text-lg md:text-2xl hover:cursor-pointer ${poppinsMedium.className}`}
+              className={`mt-1 text-lg md:text-2xl hover:cursor-pointer ${poppinsMedium.className} text-black`}
             >
               Click Here To See Prices
             </p>
             <p
-              className={`w-full md:w-80 md:ml-7 text-lg md:text-2xl mt-3 mb-5 ${poppinsSemiBold.className}`}
+              className={`w-full md:w-80 md:ml-7 text-lg md:text-2xl mt-3 mb-5 ${poppinsSemiBold.className} text-black`}
             >
               Specializing in complex installations and maintenance, we ensure
               optimal performance and compliance for large-scale operations.
@@ -248,12 +248,12 @@ export default function Home() {
 
       <section id="bookings" className="bg-blue-300 w-full min-h-screen py-8 px-4">
         <h1
-          className={`text-3xl md:text-4xl ${poppinsSemiBold.className} underline decoration-3 underline-offset-5`}
+          className={`text-3xl md:text-4xl ${poppinsSemiBold.className} underline decoration-3 underline-offset-5 text-black`}
         >
           Bookings
         </h1>
         <div className="flex justify-center items-center mt-4">
-          <h1 className={`text-2xl md:text-4xl text-center ${poppinsSemiBold.className}`}>
+          <h1 className={`text-2xl md:text-4xl text-center ${poppinsSemiBold.className} text-black`}>
             Need A Plumber Book Now
           </h1>
         </div>
@@ -294,39 +294,39 @@ export default function Home() {
 
       <section id="pricing" className="bg-gray-100 w-full min-h-screen py-8 px-4">
         <h1
-          className={`text-3xl md:text-4xl ${poppinsSemiBold.className} underline decoration-3 underline-offset-5 md:underline-offset-10`}
+          className={`text-3xl md:text-4xl ${poppinsSemiBold.className} underline decoration-3 underline-offset-5 md:underline-offset-10 text-black`}
         >
           Pricing
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
           <div className="appear-animation flex items-center flex-col w-full bg-white rounded-lg p-4 shadow-md">
-            <h1 className={`mt-2 text-xl md:text-3xl text-center ${poppinsBold.className}`}>Pipe Leakage Repairing</h1>
-            <p className={`text-lg md:text-2xl mt-1 mb-1 ${poppinsMedium.className}`}>Price £150 - £175</p>
+            <h1 className={`mt-2 text-xl md:text-3xl text-center ${poppinsBold.className} text-black`}>Pipe Leakage Repairing</h1>
+            <p className={`text-lg md:text-2xl mt-1 mb-1 ${poppinsMedium.className} text-black`}>Price £150 - £175</p>
             <Image alt="" src="/pipeLeakage.jpg" height={300} width={300} className="w-full max-w-xs border-4 border-black rounded-lg"/>
           </div>
           <div className="appear-animation flex items-center flex-col w-full bg-white rounded-lg p-4 shadow-md">
-            <h1 className={`mt-2 text-xl md:text-3xl text-center ${poppinsBold.className}`}>Local Expert Service</h1>
-            <p className={`text-lg md:text-2xl mt-1 mb-1 ${poppinsMedium.className}`}>Price £175 - £350</p>
+            <h1 className={`mt-2 text-xl md:text-3xl text-center ${poppinsBold.className} text-black`}>Local Expert Service</h1>
+            <p className={`text-lg md:text-2xl mt-1 mb-1 ${poppinsMedium.className} text-black`}>Price £175 - £350</p>
             <Image alt="" src="/download.jpg" height={300} width={300} className="w-full max-w-xs border-4 border-black rounded-lg"/>
           </div>
           <div className="appear-animation flex items-center flex-col w-full bg-white rounded-lg p-4 shadow-md">
-            <h1 className={`mt-2 text-xl md:text-3xl text-center ${poppinsBold.className}`}>Shower Repairing</h1>
-            <p className={`text-lg md:text-2xl mt-1 mb-1 ${poppinsMedium.className}`}>Price £125 - £150</p>
+            <h1 className={`mt-2 text-xl md:text-3xl text-center ${poppinsBold.className} text-black`}>Shower Repairing</h1>
+            <p className={`text-lg md:text-2xl mt-1 mb-1 ${poppinsMedium.className} text-black`}>Price £125 - £150</p>
             <Image alt="" src="/showerReapiring.jpg" height={300} width={300} className="w-full max-w-xs border-4 border-black rounded-lg"/>
           </div>
           <div className="appear-animation flex items-center flex-col w-full bg-white rounded-lg p-4 shadow-md">
-            <h1 className={`mt-2 text-xl md:text-[1.6rem] text-center ${poppinsBold.className}`}>Bathroom and Kitchen Sink</h1>
-            <p className={`text-lg md:text-2xl mb-1 ${poppinsMedium.className}`}>Price £100 - £155</p>
+            <h1 className={`mt-2 text-xl md:text-[1.6rem] text-center ${poppinsBold.className} text-black`}>Bathroom and Kitchen Sink</h1>
+            <p className={`text-lg md:text-2xl mb-1 ${poppinsMedium.className} text-black`}>Price £100 - £155</p>
             <Image alt="" src="/sinkReapir.jpg" height={300} width={300} className="w-full max-w-xs border-4 border-black rounded-lg"/>
           </div>
           <div className="appear-animation flex items-center flex-col w-full bg-white rounded-lg p-4 shadow-md">
-            <h1 className={`mt-2 text-xl md:text-3xl text-center ${poppinsBold.className}`}>Industrial Service</h1>
-            <p className={`text-lg md:text-2xl mt-1 mb-1 ${poppinsMedium.className}`}>Price £250 - £600</p>
+            <h1 className={`mt-2 text-xl md:text-3xl text-center ${poppinsBold.className} text-black`}>Industrial Service</h1>
+            <p className={`text-lg md:text-2xl mt-1 mb-1 ${poppinsMedium.className} text-black`}>Price £250 - £600</p>
             <Image alt="" src="/OIP.jpg" height={300} width={300} className="w-full max-w-xs border-4 border-black rounded-lg"/>
           </div>
           <div className="appear-animation flex items-center flex-col w-full bg-white rounded-lg p-4 shadow-md">
-            <h1 className={`mt-2 text-xl md:text-3xl text-center ${poppinsBold.className}`}>Tap, Heater and Radiator</h1>
-            <p className={`text-lg md:text-2xl mt-1 mb-1 ${poppinsMedium.className}`}>Price £150 - £175</p>
+            <h1 className={`mt-2 text-xl md:text-3xl text-center ${poppinsBold.className} text-black`}>Tap, Heater and Radiator</h1>
+            <p className={`text-lg md:text-2xl mt-1 mb-1 ${poppinsMedium.className} text-black`}>Price £150 - £175</p>
             <Image alt="" src="/heaterRepair.jpg" height={300} width={300} className="w-full max-w-xs border-4 border-black rounded-lg"/>
           </div>
         </div>
@@ -338,20 +338,20 @@ export default function Home() {
         style={{ backgroundImage: "url('aboutBg.jpg')" }}
       >
         <h1
-          className={`text-3xl md:text-4xl ${poppinsSemiBold.className} underline decoration-3 underline-offset-5`}
+          className={`text-3xl md:text-4xl ${poppinsSemiBold.className} underline decoration-3 underline-offset-5 text-black`}
         >
           About Us
         </h1>
         <div className="relative z-10 mt-8">
           <div className="slide-in2 w-full max-w-3xl mx-auto bg-white rounded-lg p-4 shadow-md">
-            <h1 className={`text-2xl md:text-3xl ${poppinsSemiBold.className}`}>Contacts</h1>
-            <p className={`mt-4 text-xl md:text-3xl ${poppinsMedium.className}`}>Facebook: The Veterans Expert Plumbing Repairs</p>
+            <h1 className={`text-2xl md:text-3xl ${poppinsSemiBold.className} text-black`}>Contacts</h1>
+            <p className={`mt-4 text-xl md:text-3xl ${poppinsMedium.className} text-black`}>Facebook: The Veterans Expert Plumbing Repairs</p>
             <FaFacebook className="m-3 text-blue-600 w-10 h-10 md:w-17 md:h-17" />
-            <p className={`mt-3 text-xl md:text-3xl ${poppinsMedium.className}`}>WhatsApp: +447788220710</p>
+            <p className={`mt-3 text-xl md:text-3xl ${poppinsMedium.className} text-black`}>WhatsApp: +447788220710</p>
             <FaWhatsapp className="m-3 text-green-600 w-10 h-10 md:w-19 md:h-19" />
           </div>
           <div className="slide-in2 mt-6 w-full max-w-3xl mx-auto bg-white rounded-lg p-4 shadow-md">
-            <h1 className={`text-xl md:text-4xl text-center ${poppinsMedium.className}`}>The Veterans Expert Plumbing Repairs are a well trusted plumbing company if you need plumbing The Veterans Expert Plumbing Repairs is the go to.</h1>
+            <h1 className={`text-xl md:text-4xl text-center ${poppinsMedium.className} text-black`}>The Veterans Expert Plumbing Repairs are a well trusted plumbing company if you need plumbing The Veterans Expert Plumbing Repairs is the go to.</h1>
           </div>
         </div>
       </section>
