@@ -230,9 +230,9 @@ export default function Home() {
             onChange={(e) => setMessage(e.target.value)}
             required
           />
-          <a className="flex items-center justify-center" href={`mailto:grayjamesong@gmail.com?subject=New request From ${name} ${lastName}&body=${message}        ${email}`}>
+          <a className="flex items-center justify-center" href={`mailto:theveteransexpertplumbingrepai@gmail.com?subject=New request From ${name} ${lastName}&body=${message}        ${email}`}>
             <button className={`mt-5 bg-blue-800 h-17 w-60 rounded-2xl shadow-[0_10px_15px_rgba(0,0,0,0.1),0_4px_6px_rgba(0,0,0,0.1)] hover:bg-blue-700 text-white ${poppinsBold.className} text-white text-3xl`}>
-              Book Now
+              Send Email
             </button>
           </a>
         </div>
@@ -252,7 +252,7 @@ export default function Home() {
           </div>
           <div className="appear-animation mt-5 ml-5 flex items-center flex-col w-100 h-75 bg-white rounded-lg shadow-[0_10px_15px_rgba(0,0,0,0.1),0_4px_6px_rgba(0,0,0,0.1)]">
             <h1 className={`mt-3 text-3xl ${poppinsBold.className}`}>Local Expert Service</h1>
-            <p className={`text-2xl mt-1 mb-1 ${poppinsMedium.className}`}>Price £150 - £175</p>
+            <p className={`text-2xl mt-1 mb-1 ${poppinsMedium.className}`}>Price £175 - £350</p>
             <Image alt="" src="/download.jpg" height={300} width={300} className="h-51 border-6 border-black rounded-lg"/>
           </div>
           <div className="appear-animation mt-5 ml-5 flex items-center flex-col w-100 h-75 bg-white rounded-lg shadow-[0_10px_15px_rgba(0,0,0,0.1),0_4px_6px_rgba(0,0,0,0.1)]">
@@ -267,7 +267,7 @@ export default function Home() {
           </div>
           <div className="appear-animation mt-5 ml-5 flex items-center flex-col w-100 h-75 bg-white rounded-lg shadow-[0_10px_15px_rgba(0,0,0,0.1),0_4px_6px_rgba(0,0,0,0.1)]">
             <h1 className={`mt-3 text-3xl ${poppinsBold.className}`}>Industrial Service</h1>
-            <p className={`text-2xl mt-1 mb-1 ${poppinsMedium.className}`}>Price £150 - £175</p>
+            <p className={`text-2xl mt-1 mb-1 ${poppinsMedium.className}`}>Price £250 - £600</p>
             <Image alt="" src="/OIP.jpg" height={300} width={300} className="border-6 border-black rounded-lg"/>
           </div>
           <div className="appear-animation mt-5 ml-5 flex items-center flex-col w-100 h-75 bg-white rounded-lg shadow-[0_10px_15px_rgba(0,0,0,0.1),0_4px_6px_rgba(0,0,0,0.1)]">
