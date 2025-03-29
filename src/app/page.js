@@ -301,32 +301,32 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
           <div className="appear-animation flex items-center flex-col w-full bg-white rounded-lg p-4 shadow-md">
             <h1 className={`mt-2 text-xl md:text-3xl text-center ${poppinsBold.className} text-black`}>Pipe Leakage Repairing</h1>
-            <p className={`text-lg md:text-2xl mt-1 mb-1 ${poppinsMedium.className} text-black`}>Price £150 - £175</p>
+            <p className={`text-lg md:text-2xl mt-1 mb-1 ${poppinsMedium.className} text-black`}>Price 150 - 175</p>
             <Image alt="" src="/pipeLeakage.jpg" height={300} width={300} className="w-full max-w-xs border-4 border-black rounded-lg"/>
           </div>
           <div className="appear-animation flex items-center flex-col w-full bg-white rounded-lg p-4 shadow-md">
             <h1 className={`mt-2 text-xl md:text-3xl text-center ${poppinsBold.className} text-black`}>Local Expert Service</h1>
-            <p className={`text-lg md:text-2xl mt-1 mb-1 ${poppinsMedium.className} text-black`}>Price £175 - £350</p>
+            <p className={`text-lg md:text-2xl mt-1 mb-1 ${poppinsMedium.className} text-black`}>Price 175 - 350</p>
             <Image alt="" src="/download.jpg" height={300} width={300} className="w-full max-w-xs border-4 border-black rounded-lg"/>
           </div>
           <div className="appear-animation flex items-center flex-col w-full bg-white rounded-lg p-4 shadow-md">
             <h1 className={`mt-2 text-xl md:text-3xl text-center ${poppinsBold.className} text-black`}>Shower Repairing</h1>
-            <p className={`text-lg md:text-2xl mt-1 mb-1 ${poppinsMedium.className} text-black`}>Price £125 - £150</p>
+            <p className={`text-lg md:text-2xl mt-1 mb-1 ${poppinsMedium.className} text-black`}>Price 125 - 150</p>
             <Image alt="" src="/showerReapiring.jpg" height={300} width={300} className="w-full max-w-xs border-4 border-black rounded-lg"/>
           </div>
           <div className="appear-animation flex items-center flex-col w-full bg-white rounded-lg p-4 shadow-md">
             <h1 className={`mt-2 text-xl md:text-[1.6rem] text-center ${poppinsBold.className} text-black`}>Bathroom and Kitchen Sink</h1>
-            <p className={`text-lg md:text-2xl mb-1 ${poppinsMedium.className} text-black`}>Price £100 - £155</p>
+            <p className={`text-lg md:text-2xl mb-1 ${poppinsMedium.className} text-black`}>Price 100 - 155</p>
             <Image alt="" src="/sinkReapir.jpg" height={300} width={300} className="w-full max-w-xs border-4 border-black rounded-lg"/>
           </div>
           <div className="appear-animation flex items-center flex-col w-full bg-white rounded-lg p-4 shadow-md">
             <h1 className={`mt-2 text-xl md:text-3xl text-center ${poppinsBold.className} text-black`}>Industrial Service</h1>
-            <p className={`text-lg md:text-2xl mt-1 mb-1 ${poppinsMedium.className} text-black`}>Price £250 - £600</p>
+            <p className={`text-lg md:text-2xl mt-1 mb-1 ${poppinsMedium.className} text-black`}>Price 250 - 600</p>
             <Image alt="" src="/OIP.jpg" height={300} width={300} className="w-full max-w-xs border-4 border-black rounded-lg"/>
           </div>
           <div className="appear-animation flex items-center flex-col w-full bg-white rounded-lg p-4 shadow-md">
             <h1 className={`mt-2 text-xl md:text-3xl text-center ${poppinsBold.className} text-black`}>Tap, Heater and Radiator</h1>
-            <p className={`text-lg md:text-2xl mt-1 mb-1 ${poppinsMedium.className} text-black`}>Price £150 - £175</p>
+            <p className={`text-lg md:text-2xl mt-1 mb-1 ${poppinsMedium.className} text-black`}>Price 150 - 175</p>
             <Image alt="" src="/heaterRepair.jpg" height={300} width={300} className="w-full max-w-xs border-4 border-black rounded-lg"/>
           </div>
         </div>
